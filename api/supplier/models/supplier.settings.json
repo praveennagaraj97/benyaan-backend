@@ -62,9 +62,6 @@
     },
     "BusinessType": {
       "type": "string"
-    },
-    "company_detail": {
-      "model": "company-details"
     }
   }
 }

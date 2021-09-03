@@ -53,6 +53,9 @@
     "ShareOurPlatformWithOthers": {
       "type": "boolean",
       "required": true
+    },
+    "supplier": {
+      "model": "supplier"
     }
   }
 }
