@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "Supplier",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProviderName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "CommercialRegistrationNumberIssueDate": {
+      "type": "date",
+      "required": true
+    },
+    "CommercialRegistrationNumberExpiryDate": {
+      "type": "date",
+      "required": true
+    },
+    "CommercialRegistration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "TradingLicenseNumberIssueDate": {
+      "type": "date",
+      "required": true
+    },
+    "TradingLicenseNumberExpiryDate": {
+      "required": true,
+      "type": "date"
+    },
+    "TradingLicense": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "BusinessType": {
+      "type": "string"
+    },
+    "company_detail": {
+      "model": "company-details"
+    }
+  }
+}
