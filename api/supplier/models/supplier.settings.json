@@ -31,7 +31,11 @@
     "CommercialRegistration": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["files", "images", "videos"],
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -47,7 +51,11 @@
     "TradingLicense": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["files", "images", "videos"],
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -69,20 +77,22 @@
     },
     "SocialMediaInstagram": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "SocialMediaSnapchat": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "SocialMediaTwitter": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "UploadyourCompanyProfilePDF": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["files"],
+      "allowedTypes": [
+        "files"
+      ],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
