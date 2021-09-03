@@ -31,13 +31,9 @@
     "CommercialRegistration": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
+      "allowedTypes": ["files", "images", "videos"],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "TradingLicenseNumberIssueDate": {
@@ -51,17 +47,53 @@
     "TradingLicense": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
+      "allowedTypes": ["files", "images", "videos"],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "BusinessType": {
       "type": "string"
+    },
+    "ClientManagerAuthorizedSignatureName": {
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "CompanyAddress": {
+      "type": "string",
+      "required": true
+    },
+    "SocialMediaInstagram": {
+      "type": "string",
+      "required": true
+    },
+    "SocialMediaSnapchat": {
+      "type": "string",
+      "required": true
+    },
+    "SocialMediaTwitter": {
+      "type": "string",
+      "required": true
+    },
+    "UploadyourCompanyProfilePDF": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": ["files"],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "ContactUsByEmailForSupportAndEnquiry": {
+      "type": "boolean",
+      "required": true
+    },
+    "ShareOurPlatformWithOthers": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
