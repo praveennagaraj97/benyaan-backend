@@ -60,9 +60,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "BusinessType": {
-      "type": "string"
-    },
     "ClientManagerAuthorizedSignatureName": {
       "type": "string",
       "required": true
@@ -97,15 +94,9 @@
       "required": true,
       "pluginOptions": {}
     },
-    "ContactUsByEmailForSupportAndEnquiry": {
-      "type": "boolean",
-      "required": false,
-      "default": false
-    },
-    "ShareOurPlatformWithOthers": {
-      "type": "boolean",
-      "required": false,
-      "default": false
+    "BusinessType": {
+      "type": "json",
+      "required": true
     }
   }
 }
